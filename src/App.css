@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+/* MADE WITH LOVE BY SANKET */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  background-image: linear-gradient(to right, #000428, #004e92);
+  width: 55%;
+  min-width: 550px;
+  padding: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  box-shadow: white 0px 2px 4px 0px, white 0px 2px 16px 0px;
+}
+.imgs {
+  width: 70px;
+  float: right;
+  margin-top: -30px;
+  background: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  font-size: 32px !important;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-top: -10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.currency_exchnage {
+  display: flex;
+  justify-content: space-between;
+
+  background: transparent;
+}
+
+.input_container {
+  width: 30%;
+  height: fit-content;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  background: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 12px;
+  bottom: 9px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input_label {
+  font-size: 0.95rem;
+  color: #8b8e98;
+  font-weight: 600;
+  background: transparent;
+}
+
+.input_field {
+  width: auto;
+  height: 60px;
+  background: #fff;
+  color: red;
+  padding: 0 0 0 40px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  background: #fff;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+.output {
+  background: transparent;
+}
+
+.opt {
+  background-image: linear-gradient(to right, #000428, #004e92);
+  color: red;
+}
+
+h2 {
+  width: 50%;
+  margin-top: 20px;
+  background-color: #e8f8fd;
+  padding: 26px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+    min-width: 90%;
+    padding: 50px 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 22px !important;
+    margin-bottom: 2rem;
+    margin-top: -10%;
+    margin-left: -1%;
+  }
+
+  .imgs {
+    width: 50px;
+    float: right;
+    margin-top: -30px;
+    background: transparent;
+    margin-right: -5%;
+  }
+
+  .input_container {
+    width: 30%;
+    height: 80px;
+
+    gap: 10px;
+    text-align: center;
+  }
+
+  .input_field {
+    font-size: 18px;
+    width: auto;
+    height: 35px;
+    background: #fff;
+    color: red;
+    padding: 0 0 0 40px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    filter: drop-shadow(0px 1px 0px #efefef)
+      drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  h2 {
+    width: 100%;
+    margin-top: 20px;
+
+    background: transparent;
+    color: white;
+    padding: 10px 12px 10px 5px;
+    font-size: 19px;
+    padding-right: -100px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
   }
 }

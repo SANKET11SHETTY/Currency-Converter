@@ -106,9 +106,11 @@ h1 {
 }
 
 h2 {
-  width: 50%;
-  margin-top: 20px;
-  background-color: #e8f8fd;
+  width: 52%;
+  margin-top: 40px;
+  background-image: linear-gradient(to right, #E55D87, #5FC3E4);
+  letter-spacing: 4px;
+color: white;
   padding: 26px;
   border-radius: 10px;
 }
@@ -163,8 +165,8 @@ h2 {
     width: 100%;
     margin-top: 20px;
 
-    background: transparent;
-    color: white;
+    /* background: transparent;
+    color: white; */
     padding: 10px 12px 10px 5px;
     font-size: 19px;
     padding-right: -100px;
